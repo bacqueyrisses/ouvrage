@@ -2,6 +2,7 @@
   "name": "ouvrage",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -18,6 +19,7 @@
     "eslint-config-next": "13.3.4",
     "iconv-lite": "^0.6.3",
     "next": "13.3.4",
+    "pg": "^8.10.0",
     "postcss": "8.4.23",
     "react": "18.2.0",
     "react-dom": "18.2.0",
