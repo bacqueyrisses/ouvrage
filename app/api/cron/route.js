@@ -1,7 +1,6 @@
 import { NextResponse } from "next/server";
 import fs from "fs";
 import iconv from "iconv-lite";
-import "dotenv/config";
 import pg from "pg";
 
 const { Pool } = pg;
