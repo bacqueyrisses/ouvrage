@@ -94,7 +94,7 @@ export default async function Home() {
             priority={index <= 1}
           />
           <p className="text-center text-sm leading-normal sm:text-lg sm:leading-7">
-            Mots : Votre liste ou la nôtre
+            Au choix : Votre liste ou la nôtre
           </p>
         </div>
       </section>
