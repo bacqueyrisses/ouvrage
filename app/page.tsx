@@ -19,9 +19,9 @@ export default async function Home() {
   const dailyWord = words[index];
 
   return (
-    <main>
+    <main className={"mb-5"}>
       <Header words={words} />
-      <section className="space-y-6 pb-10 pt-6 md:pb-12 md:pt-10 lg:py-20">
+      <section className="space-y-6 pb-10 pt-6 md:pb-12 md:pt-10 lg:py-10">
         <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center">
           <WordsList dailyWord={dailyWord} />
           <div className="space-x-4">
@@ -32,45 +32,69 @@ export default async function Home() {
       </section>
       <section
         id="features"
-        className="container flex flex-col items-center justify-evenly gap-4 bg-slate-50 py-8 dark:bg-transparent md:flex-row md:py-12"
+        className="mx-auto flex max-w-md flex-col items-center justify-evenly gap-4 bg-slate-50 py-8 md:container dark:bg-transparent md:max-w-max md:flex-row md:px-24 md:py-12 lg:gap-10"
       >
-        <div className={"space-y-2 md:space-y-4"}>
+        <div className={"flex flex-col items-center gap-2"}>
           <Image
-            src={"/illustrations/woman.svg"}
+            src={"/illustrations/discover.svg"}
             alt={""}
-            width={330}
-            height={100}
-            className="rounded-md border bg-muted transition-colors"
+            width={200}
+            height={80}
+            className="rounded-md border bg-slate-100 transition-colors dark:bg-slate-500 sm:hidden"
             priority={index <= 1}
           />
-          <p className="text-center leading-normal sm:text-lg sm:leading-7">
-            Un nouveau mot chaque jour
+          <Image
+            src={"/illustrations/discover.svg"}
+            alt={""}
+            width={300}
+            height={100}
+            className="hidden rounded-md border bg-muted bg-slate-100 transition-colors dark:bg-slate-500 sm:inline-block"
+            priority={index <= 1}
+          />
+          <p className="text-center text-sm leading-normal sm:text-lg sm:leading-7">
+            Découvrez de nouveaux mots
           </p>
         </div>
-        <div className={"space-y-2 md:space-y-4"}>
+        <div className={"flex flex-col items-center gap-2"}>
           <Image
-            src={"/illustrations/woman.svg"}
+            src={"/illustrations/favorite.svg"}
             alt={""}
-            width={330}
-            height={100}
-            className="rounded-md border bg-muted transition-colors"
+            width={200}
+            height={80}
+            className="rounded-md border bg-muted bg-slate-100 transition-colors dark:bg-slate-500 sm:hidden"
             priority={index <= 1}
           />
-          <p className="text-center leading-normal sm:text-lg sm:leading-7">
-            Ajoutez vos favoris à votre liste
+          <Image
+            src={"/illustrations/favorite.svg"}
+            alt={""}
+            width={300}
+            height={100}
+            className="hidden rounded-md border bg-muted bg-slate-100 transition-colors dark:bg-slate-500 sm:inline-block"
+            priority={index <= 1}
+          />
+          <p className="text-center text-sm leading-normal sm:text-lg sm:leading-7">
+            Créez votre liste de jolis mots
           </p>
         </div>
-        <div className={"space-y-2 md:space-y-4"}>
+        <div className={"flex flex-col items-center gap-2"}>
           <Image
-            src={"/illustrations/woman.svg"}
+            src={"/illustrations/list.svg"}
             alt={""}
-            width={330}
-            height={100}
-            className="rounded-md border bg-muted transition-colors"
+            width={200}
+            height={80}
+            className="rounded-md border bg-muted bg-slate-100 transition-colors dark:bg-slate-500 sm:hidden"
             priority={index <= 1}
           />
-          <p className="text-center leading-normal sm:text-lg sm:leading-7">
-            Accédez à un mot aléatoire
+          <Image
+            src={"/illustrations/list.svg"}
+            alt={""}
+            width={300}
+            height={100}
+            className="hidden rounded-md border bg-muted bg-slate-100 transition-colors dark:bg-slate-500 sm:inline-block"
+            priority={index <= 1}
+          />
+          <p className="text-center text-sm leading-normal sm:text-lg sm:leading-7">
+            Au choix : Votre liste ou la nôtre
           </p>
         </div>
       </section>
