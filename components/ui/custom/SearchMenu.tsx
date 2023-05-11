@@ -7,8 +7,9 @@ import {
   CommandList,
   CommandItem,
 } from "@/components/ui/command";
+import { useEffect } from "react";
 
-export default function SearchMenu({ open, onOpenChange, value }) {
+export default function SearchMenu({ open, onOpenChange, value }: any) {
   return (
     <CommandDialog open={open} onOpenChange={onOpenChange}>
       <CommandInput placeholder="Rechercher un mot..." />
