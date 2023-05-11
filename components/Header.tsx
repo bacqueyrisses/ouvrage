@@ -12,7 +12,7 @@ export default function Header({ words }: any) {
   // @ts-ignore
   return (
     <header className="w-full">
-      <div className="container flex h-20 items-center py-7">
+      <div className="container flex h-20 items-center">
         <div className="mr-4 flex">
           <Link className="mr-6 flex items-center space-x-2" href="/">
             <Image

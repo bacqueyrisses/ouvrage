@@ -14,13 +14,15 @@ export default async function Home() {
   };
 
   const words = await getWords();
+  const index = Math.round(Math.random() * (words.length - 1));
+  const dailyWord = words[index];
 
   return (
     <main>
       <Header words={words} />
       <section className="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
         <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center">
-          <WordsList words={words} />
+          <WordsList dailyWord={dailyWord} />
           <div className="space-x-4">
             <Button>Mot aléatoire</Button>
             <Button variant={"secondary"}>Mot de ma liste</Button>
