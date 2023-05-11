@@ -1,8 +1,6 @@
 // @ts-nocheck
 import WordsList from "@/components/WordsList";
 import Header from "@/components/Header";
-import axios from "axios";
-import { baseURL } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { sql } from "@vercel/postgres";
 
@@ -14,6 +12,7 @@ export default async function Home() {
     }
     return rows;
   };
+
   const words = await getWords();
 
   return (
