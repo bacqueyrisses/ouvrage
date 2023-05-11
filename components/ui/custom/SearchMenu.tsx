@@ -7,7 +7,6 @@ import {
   CommandList,
   CommandItem,
 } from "@/components/ui/command";
-import { useEffect } from "react";
 
 export default function SearchMenu({ open, onOpenChange, value }: any) {
   return (

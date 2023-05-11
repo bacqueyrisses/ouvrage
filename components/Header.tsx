@@ -1,10 +1,6 @@
-"use client";
-
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
-import SearchButton from "@/components/ui/custom/SearchButton";
-import SearchMenu from "@/components/ui/custom/SearchMenu";
+import { Search, User, UserCircle } from "lucide-react";
 import Link from "next/link";
 import SearchControl from "@/components/ui/custom/SearchControl";
 import ModeSwitcher from "@/components/ModeSwitcher";
@@ -34,7 +30,10 @@ export default function Header({ words }: any) {
         </div>
         <div className="flex flex-1 items-center justify-between space-x-2 sm:space-x-4 md:justify-end">
           <SearchControl words={words} />
-          <Button variant="secondary">Connexion</Button>
+          <Button variant="secondary">
+            <span className={"hidden sm:inline-block"}>Connexion</span>
+            <User size={19} className={"sm:hidden"} />
+          </Button>
           <ModeSwitcher />
         </div>
       </div>
