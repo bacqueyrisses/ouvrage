@@ -25,7 +25,7 @@ export default function Header({ words }: any) {
               "hidden rounded-2xl bg-secondary px-4 py-1.5 text-sm font-medium text-secondary-foreground hover:bg-secondary/80 md:block"
             }
           >
-            Un nouveau mot quotidien
+            Le lexique des jolis mots
           </div>
         </div>
         <div className="flex flex-1 items-center justify-between space-x-2 sm:space-x-4 md:justify-end">
