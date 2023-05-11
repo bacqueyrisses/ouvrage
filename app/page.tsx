@@ -32,7 +32,7 @@ export default async function Home() {
       </section>
       <section
         id="features"
-        className="mx-auto flex max-w-md flex-col items-center justify-evenly gap-4 bg-slate-50 py-8 md:container dark:bg-transparent md:max-w-max md:flex-row md:px-24 md:py-12 lg:gap-10"
+        className="mx-auto flex w-5/6 flex-col items-center justify-evenly gap-4 bg-slate-50 py-8 md:container md:container dark:bg-transparent md:flex-row md:px-24 md:py-12 lg:w-9/12 lg:gap-10"
       >
         <div className={"flex flex-col items-center gap-2"}>
           <Image
