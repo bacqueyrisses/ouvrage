@@ -4,11 +4,17 @@ import Header from "@/components/Header";
 import axios from "axios";
 import { baseURL } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import { sql } from "@vercel/postgres";
 
 export default async function Home() {
-  const { data: words } = await axios.get(`${baseURL}/api/words`).catch((e) => {
-    throw new Error(e);
-  });
+  const getWords = async () => {
+    const { rows } = await sql`SELECT * FROM "Word";`;
+    if (!rows) {
+      throw new Error("Failed to fetch data from Word.");
+    }
+    return rows;
+  };
+  const words = await getWords();
 
   return (
     <main>
