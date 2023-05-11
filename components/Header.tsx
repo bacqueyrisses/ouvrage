@@ -18,7 +18,7 @@ export default function Header({ words }: any) {
               height={25}
               priority
             />
-            <span className="font-bold">Ouvrage</span>
+            <span className="hidden font-bold sm:inline-block">Ouvrage</span>
           </Link>
           <div
             className={
