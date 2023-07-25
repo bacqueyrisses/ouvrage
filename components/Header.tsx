@@ -4,7 +4,7 @@ import { User } from "lucide-react";
 import Link from "next/link";
 import SearchControl from "@/components/ui/custom/SearchControl";
 import ModeSwitcher from "@/components/ModeSwitcher";
-export default function Header({ words }: any) {
+export default function Header({ words, handleSearch }: any) {
   // @ts-ignore
   return (
     <header className="w-full">
@@ -29,11 +29,11 @@ export default function Header({ words }: any) {
           </div>
         </div>
         <div className="flex flex-1 items-center justify-between space-x-2 sm:space-x-4 md:justify-end">
-          <SearchControl words={words} />
-          <Button variant="secondary" className={"h-9"}>
-            <span className={"hidden sm:inline-block"}>Connexion</span>
-            <User size={19} className={"sm:hidden"} />
-          </Button>
+          <SearchControl words={words} handleSearch={handleSearch} />
+          {/*<Button variant="secondary" className={"h-9"}>*/}
+          {/*  <span className={"hidden sm:inline-block"}>Connexion</span>*/}
+          {/*  <User size={19} className={"sm:hidden"} />*/}
+          {/*</Button>*/}
           <ModeSwitcher />
         </div>
       </div>

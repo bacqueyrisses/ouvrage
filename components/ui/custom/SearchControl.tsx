@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import SearchButton from "@/components/ui/custom/SearchButton";
 import SearchMenu from "@/components/ui/custom/SearchMenu";
 
-export default function SearchControl({ words }: any) {
+export default function SearchControl({ words, handleSearch }: any) {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -20,7 +20,7 @@ export default function SearchControl({ words }: any) {
   return (
     <>
       <SearchButton onClick={() => setOpen(true)} />
-      <SearchMenu open={open} onOpenChange={setOpen} value={words} />
+      <SearchMenu open={open} onOpenChange={setOpen} value={words} handleSearch={handleSearch} />
     </>
   );
 }
