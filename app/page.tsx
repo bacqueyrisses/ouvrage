@@ -2,6 +2,8 @@ import Image from "next/image";
 import json from '@/json/words.json'
 import {getStoredWord, setStoredWord} from "@/actions/actions";
 import ClientSection from "@/components/ClientSection";
+import Header from "@/components/Footer";
+import Footer from "@/components/Footer";
 
 
 export default async function Home() {
@@ -27,6 +29,7 @@ export default async function Home() {
     const {storedWord, storedDescription} = await setWord()
 
     return (
+        <div className={"min-h-screen flex flex-col justify-around sm:pb-1 pb-4 text-xs sm:text-sm"}>
         <main className={"mb-5"}>
             <ClientSection storedWord={storedWord} storedDescription={storedDescription} wordsKeys={wordsKeys}
                            words={words}/>
@@ -99,5 +102,7 @@ export default async function Home() {
                 </div>
             </section>
         </main>
-    );
+            <Footer/>
+        </div>
+);
 }
