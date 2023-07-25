@@ -1,38 +1,13 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## 🔨 Problem
+For the past two years, I've been creating a collection of over 450 beautiful words that I carry everyone, on my iPhone. Each word holds a unique allure, but I actually never look at my note app...
 
-First, run the development server:
+## 💡 Solution 
+To remedy this, I've created this website where I can share my beloved collection that is scrapped from my iCloud note app. Every day, you'll find a new word displayed, ready to and inspire you.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+I'll be adding a personal space so, you can also, create your very own list of favorite words. With the addition of a personal identification feature, you can contribute to this shared treasury and add words that resonate with you.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📚 Ouvrage
+Delight in the wonders of language, explore new vocabulary, and witness the beauty of words brought to life. Join me on this linguistic journey, and together, let's celebrate the splendor of language and build a world of beautiful words.
 
-You can start editing the page by modifying `app/page.jsx`. The page auto-updates as you edit the file.
-
-[http://localhost:3000/api/hello](http://localhost:3000/api/hello) is an endpoint that uses [Route Handlers](https://beta.nextjs.org/docs/routing/route-handlers). This endpoint can be edited in `app/api/hello/route.js`.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# rightone
-# rightone
+### ✦ Made with love by Enzo ✦
