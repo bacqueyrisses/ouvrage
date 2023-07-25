@@ -1,71 +1,53 @@
-"use client"
+// "use client"
 import WordsList from "@/components/WordsList";
 import Header from "@/components/Header";
 import {Button} from "@/components/ui/button";
 import Image from "next/image";
-import {useEffect, useRef, useState} from "react";
+// import {useEffect, useRef, useState} from "react";
 import json from '@/json/words.json'
 import {getStoredWord, setStoredWord} from "@/actions/actions";
+import ClientSection from "@/components/clientSection";
 
 
-export default function Home() {
+export default async function Home() {
 
-    const [dailyWord, setDailyWord] = useState<string>("")
-    const[dailyDescription, setDailyDescription] = useState<string>("")
-    const [newDescription, setNewDescription] = useState<string>("")
-    const newWordRef = useRef("")
+
 
     const words = Object.entries(json)
     const wordsKeys = Object.keys(json)
     const index = Math.round(Math.random() * (words.length - 1));
+    let wordy
+    let description
 
-    const setWord = () => {
-        getStoredWord().then(word => {
+    const setWord = async () => {
+        await getStoredWord().then(word => {
             if (!word) setStoredWord(words[index][0]).then(() => setWord())
-            setDailyWord(word!)
+            console.log(word)
+            wordy = word
+            // setDailyWord(word!)
             const currentDescription = words.find(value => value[0] === word)?.at(1)
             if (!currentDescription) return
-            setDailyDescription(currentDescription)
+            description = currentDescription
+            // setDailyDescription(currentDescription)
         })
     }
-    useEffect(() => {
-        setWord()
-    }, []);
+    await setWord()
 
-    const handleRandom = () => {
-        newWordRef.current = words[index][0]
-
-        const currentDescription = words.find(value => value[0] === newWordRef.current)?.at(1)
-        if (!currentDescription) return
-        setNewDescription(() => currentDescription)
-    }
-
-    const handleSearch = (word: string) => {
-        newWordRef.current = word
-
-        const currentDescription = words.find(value => value[0] === newWordRef.current)?.at(1)
-        if (!currentDescription) return
-        setNewDescription(currentDescription)
-    }
-
-    const handleHomepage = () => {
-        newWordRef.current = ""
-        setNewDescription("")
-    }
 
     return (
         <main className={"mb-5"}>
-            <Header words={wordsKeys} handleSearch={handleSearch} handleHomepage={handleHomepage}/>
-            <section className="space-y-6 pb-10 pt-6 md:pb-12 md:pt-10 lg:py-10">
-                <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center">
-
-                    <WordsList dailyWord={dailyWord} newWord={newWordRef.current} dailyDescription={dailyDescription} newDescription={newDescription}/>
-                    <div className="space-x-4">
-                        <Button onClick={handleRandom}>Mot aléatoire</Button>
-                        {/*<Button variant={"secondary"}>Mot de ma liste</Button>*/}
-                    </div>
-                </div>
-            </section>
+            <ClientSection wordy={wordy} description={description} wordsKeys={wordsKeys} words={words}/>
+            {/*<Header words={wordsKeys} handleSearch={handleSearch} handleHomepage={handleHomepage}/>*/}
+            {/*<section className="space-y-6 pb-10 pt-6 md:pb-12 md:pt-10 lg:py-10">*/}
+            {/*    <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center">*/}
+            {/*        {wordy + description}*/}
+            {/*        /!*<WordsList dailyWord={dailyWord} newWord={newWordRef.current} dailyDescription={dailyDescription} newDescription={newDescription}/>*!/*/}
+            {/*        <div className="space-x-4">*/}
+            {/*            /!*<Button onClick={handleRandom}>Mot aléatoire</Button>*!/*/}
+            {/*            /!*<Button variant={"secondary"}>Mot de ma liste</Button>*!/*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</section>*/}
             <section
                 id="features"
                 className="mx-auto flex w-5/6 flex-col items-center justify-evenly gap-4 bg-slate-50 py-8 md:container md:container dark:bg-transparent md:flex-row md:px-24 md:py-12 lg:w-9/12 lg:gap-10"
