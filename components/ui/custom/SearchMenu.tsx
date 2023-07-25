@@ -10,7 +10,6 @@ import {
 
 export default function SearchMenu({ open, onOpenChange, value, handleSearch }: any) {
     const handleChange = (word: any) => {
-        console.log(word)
         handleSearch(word)
         onOpenChange(false)
     }
@@ -20,14 +19,12 @@ export default function SearchMenu({ open, onOpenChange, value, handleSearch }: 
       <CommandList>
         <CommandEmpty>Aucun mot trouvé.</CommandEmpty>
         <CommandGroup heading="Mots trouvés">
-          {value.map((word: any, index: any) => {
-              console.log(word)
-              return (
+          {value.map((word: any, index: any) => (
             <CommandItem key={index} onSelect={() => handleChange(word)}>
               <Search className="mr-2 h-4 w-4" />
               {word}
             </CommandItem>
-              )})}
+              ))}
         </CommandGroup>
       </CommandList>
     </CommandDialog>

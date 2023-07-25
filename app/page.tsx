@@ -3,7 +3,7 @@ import WordsList from "@/components/WordsList";
 import Header from "@/components/Header";
 import {Button} from "@/components/ui/button";
 import Image from "next/image";
-import {useEffect, useState} from "react";
+import {useEffect, useRef, useState} from "react";
 import json from '@/json/words.json'
 import {getStoredWord, setStoredWord} from "@/actions/actions";
 
@@ -11,8 +11,9 @@ import {getStoredWord, setStoredWord} from "@/actions/actions";
 export default function Home() {
 
     const [dailyWord, setDailyWord] = useState<string>("")
-    const [newWord, setNewWord] = useState<string>("")
-    const [description, setDescription] = useState<string>("")
+    const[dailyDescription, setDailyDescription] = useState<string>("")
+    const [newDescription, setNewDescription] = useState<string>("")
+    const newWordRef = useRef("")
 
     const words = Object.entries(json)
     const wordsKeys = Object.keys(json)
@@ -24,7 +25,7 @@ export default function Home() {
             setDailyWord(word!)
             const currentDescription = words.find(value => value[0] === word)?.at(1)
             if (!currentDescription) return
-            setDescription(currentDescription)
+            setDailyDescription(currentDescription)
         })
     }
     useEffect(() => {
@@ -32,27 +33,33 @@ export default function Home() {
     }, []);
 
     const handleRandom = () => {
-        setNewWord(words[index][0])
-        const currentDescription = words.find(value => value[0] === newWord)?.at(1)
+        newWordRef.current = words[index][0]
+
+        const currentDescription = words.find(value => value[0] === newWordRef.current)?.at(1)
         if (!currentDescription) return
-        setDescription(currentDescription)
+        setNewDescription(() => currentDescription)
     }
 
     const handleSearch = (word: string) => {
-        setNewWord(word)
-        const currentDescription = words.find(value => value[0] === word)?.at(1)
+        newWordRef.current = word
+
+        const currentDescription = words.find(value => value[0] === newWordRef.current)?.at(1)
         if (!currentDescription) return
-        setDescription(currentDescription)
+        setNewDescription(currentDescription)
     }
 
+    const handleHomepage = () => {
+        newWordRef.current = ""
+        setNewDescription("")
+    }
 
     return (
         <main className={"mb-5"}>
-            <Header words={wordsKeys} handleSearch={handleSearch}/>
+            <Header words={wordsKeys} handleSearch={handleSearch} handleHomepage={handleHomepage}/>
             <section className="space-y-6 pb-10 pt-6 md:pb-12 md:pt-10 lg:py-10">
                 <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center">
 
-                    <WordsList dailyWord={dailyWord} newWord={newWord} description={description}/>
+                    <WordsList dailyWord={dailyWord} newWord={newWordRef.current} dailyDescription={dailyDescription} newDescription={newDescription}/>
                     <div className="space-x-4">
                         <Button onClick={handleRandom}>Mot aléatoire</Button>
                         {/*<Button variant={"secondary"}>Mot de ma liste</Button>*/}

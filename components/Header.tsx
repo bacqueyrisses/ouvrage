@@ -4,13 +4,13 @@ import { User } from "lucide-react";
 import Link from "next/link";
 import SearchControl from "@/components/ui/custom/SearchControl";
 import ModeSwitcher from "@/components/ModeSwitcher";
-export default function Header({ words, handleSearch }: any) {
+export default function Header({ words, handleSearch, handleHomepage }: any) {
   // @ts-ignore
   return (
     <header className="w-full">
       <div className="container flex h-20 items-center">
         <div className="mr-4 flex">
-          <Link className="mr-6 flex items-center space-x-2" href="/">
+          <button className="mr-6 flex items-center space-x-2" onClick={handleHomepage}>
             <Image
               src="./book.svg"
               alt="Next.js Logo"
@@ -19,7 +19,7 @@ export default function Header({ words, handleSearch }: any) {
               priority
             />
             <span className="hidden font-bold sm:inline-block">Ouvrage</span>
-          </Link>
+          </button>
           <div
             className={
               "hidden rounded-2xl bg-secondary px-4 py-1.5 text-sm font-medium text-secondary-foreground hover:bg-secondary/80 md:block"

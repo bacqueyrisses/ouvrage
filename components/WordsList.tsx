@@ -1,5 +1,5 @@
 // @ts-nocheck
-export default function WordsList({ dailyWord, newWord, description }) {
+export default function WordsList({ dailyWord, newWord, dailyDescription, newDescription }) {
   // @ts-ignore
   return (
     <>
@@ -7,7 +7,7 @@ export default function WordsList({ dailyWord, newWord, description }) {
         {newWord || dailyWord}
       </h1>
       <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
-        {description}
+        {newDescription || dailyDescription}
       </p>
     </>
   );
