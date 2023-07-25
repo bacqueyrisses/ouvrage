@@ -22,13 +22,10 @@ export default async function Home() {
     const setWord = async () => {
         await getStoredWord().then(word => {
             if (!word) setStoredWord(words[index][0]).then(() => setWord())
-            console.log(word)
             wordy = word
-            // setDailyWord(word!)
             const currentDescription = words.find(value => value[0] === word)?.at(1)
             if (!currentDescription) return
             description = currentDescription
-            // setDailyDescription(currentDescription)
         })
     }
     await setWord()
