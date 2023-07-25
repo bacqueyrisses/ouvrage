@@ -17,15 +17,15 @@ export default async function Home() {
     const wordsKeys = Object.keys(json)
     const index = Math.round(Math.random() * (words.length - 1));
     let wordy
-    let description ="ok"
+    let description
 
     const setWord = async () => {
         await getStoredWord().then(word => {
             if (!word) setStoredWord(words[index][0]).then(() => setWord())
             wordy = word
-            // const currentDescription = words.find(value => value[0] === word)?.at(1)
-            // if (!currentDescription) return
-            // description = currentDescription
+            const currentDescription = words.find(value => value[0] === word)?.at(1)
+            if (!currentDescription) return
+            description = currentDescription
         })
     }
     await setWord()

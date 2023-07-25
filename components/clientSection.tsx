@@ -1,11 +1,11 @@
 "use client"
-
+// @ts-nocheck
 import Header from "@/components/Header";
 import {useEffect, useRef, useState} from "react";
 import WordsList from "@/components/WordsList";
 import {Button} from "@/components/ui/button";
 
-export default function ClientSection({wordy, description, words, wordsKeys}) {
+export default function ClientSection({wordy, description, words, wordsKeys} : any) {
     const [dailyWord, setDailyWord] = useState<string>(wordy)
     const[dailyDescription, setDailyDescription] = useState<string>(description)
     const [newDescription, setNewDescription] = useState<string>("")
@@ -16,7 +16,7 @@ export default function ClientSection({wordy, description, words, wordsKeys}) {
     const handleRandom = () => {
         newWordRef.current = words[index][0]
 
-        const currentDescription = words.find(value => value[0] === newWordRef.current)?.at(1)
+        const currentDescription = words.find((value: string[]) => value[0] === newWordRef.current)?.at(1)
         if (!currentDescription) return
         setNewDescription(() => currentDescription)
     }
@@ -24,7 +24,7 @@ export default function ClientSection({wordy, description, words, wordsKeys}) {
     const handleSearch = (word: string) => {
         newWordRef.current = word
 
-        const currentDescription = words.find(value => value[0] === newWordRef.current)?.at(1)
+        const currentDescription = words.find((value: string[]) => value[0] === newWordRef.current)?.at(1)
         if (!currentDescription) return
         setNewDescription(currentDescription)
     }
