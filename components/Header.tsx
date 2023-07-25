@@ -20,6 +20,15 @@ export default function Header({words, handleSearch, handleHomepage}: HeaderI) {
                         <Image
                             src="./book.svg"
                             alt="Next.js Logo"
+                            className={"inline dark:hidden"}
+                            width={25}
+                            height={25}
+                            priority
+                        />
+                        <Image
+                            src="./book.svg"
+                            className={"hidden dark:inline"}
+                            alt="Next.js Logo"
                             width={25}
                             height={25}
                             priority

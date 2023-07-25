@@ -1,7 +1,7 @@
 import Image from "next/image";
 import json from '@/json/words.json'
 import {getStoredWord, setStoredWord} from "@/actions/actions";
-import ClientSection from "@/components/clientSection";
+import ClientSection from "@/components/ClientSection";
 
 
 export default async function Home() {
