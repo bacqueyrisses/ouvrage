@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { revalidatePath } from 'next/cache'
+import axios from "axios";
 
 export async function GET(request: NextRequest) {
-    await fetch('https://www.ouvrage.dev/', {method: "GET"})
-    revalidatePath("/")
+    await axios.get("https://www.ouvrage.dev/")
     return NextResponse.json({ revalidated: true, now: Date.now() })
 }
