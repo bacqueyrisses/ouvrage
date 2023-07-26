@@ -11,7 +11,7 @@ export const metadata = {
 
 // CRON used to revalidate as page regeneration isn't working
 // See doc: https://nextjs.org/docs/app/building-your-application/data-fetching/revalidating
-// export const revalidate = 86400
+export const revalidate = 10
 export default async function RootLayout({
   children,
 }: {
