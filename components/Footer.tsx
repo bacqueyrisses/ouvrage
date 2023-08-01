@@ -1,4 +1,11 @@
-export default function Footer() {
-    return <a href={"https://www.bacqueyrisses.dev/"} target={"_blank"} className={"text-center"}>✦ Made with love by Enzo ✦</a>
+import Link from "next/link";
 
+export default function Footer() {
+  return (
+    <div className={"text-center text-sm"}>
+      <Link href={"https://www.bacqueyrisses.dev/"} target={"_blank"}>
+        ✦ Made with love by Enzo ✦
+      </Link>
+    </div>
+  );
 }
