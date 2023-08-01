@@ -17,7 +17,7 @@ export default function Header({
   return (
     <header className="w-full">
       <div className="container flex h-20 items-center">
-        <div className="flex items-center gap-2">
+        <div className="mr-3 flex items-center gap-2 sm:mr-0">
           <button className="flex items-center" onClick={handleHomepage}>
             <Image
               src={logo}
@@ -39,7 +39,7 @@ export default function Header({
           </button>
           <div
             className={
-              "inline hidden rounded-2xl bg-secondary px-4 py-1.5 text-sm font-medium text-secondary-foreground hover:bg-secondary/80 md:block"
+              "hidden rounded-2xl bg-secondary px-4 py-1.5 text-sm font-medium text-secondary-foreground hover:bg-secondary/80 sm:inline md:block"
             }
           >
             Le lexique des jolis mots
