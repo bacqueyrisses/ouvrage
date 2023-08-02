@@ -61,7 +61,7 @@ export default function ClientSection({
         handleHomepage={handleHomepage}
       />
       <section className="space-y-6 pb-10 pt-6 md:pb-12 md:pt-10 lg:py-10">
-        <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center">
+        <div className="max-w-10/12 container flex flex-col items-center gap-4 text-center">
           <WordsList
             dailyWord={dailyWord}
             newWord={newWordRef.current}
