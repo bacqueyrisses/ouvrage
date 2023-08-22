@@ -84,7 +84,8 @@ export default async function Home() {
               priority={index <= 1}
             />
             <p className="text-center text-sm leading-normal sm:text-lg sm:leading-7">
-              Créez votre liste de jolis mots
+              Un nouveau mot quotidien
+              {/*Créez votre liste de jolis mots*/}
             </p>
           </div>
           <div className={"flex flex-col items-center gap-2"}>
@@ -105,7 +106,8 @@ export default async function Home() {
               priority={index <= 1}
             />
             <p className="text-center text-sm leading-normal sm:text-lg sm:leading-7">
-              Au choix : Votre liste ou la nôtre
+              Recherchez dans la liste
+              {/*Au choix : Votre liste ou la nôtre*/}
             </p>
           </div>
         </section>
