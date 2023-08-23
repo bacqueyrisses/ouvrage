@@ -6,8 +6,7 @@ const KV_REST_API_URL = "";
 const KV_REST_API_TOKEN = "";
 
 async function uploadToDB() {
-  const wordsFile =
-    "/Users/bacqueyrisses/dev/tools/update-database-schedule/words.json";
+  const wordsFile = "";
 
   try {
     const wordsJson = await fs.readFile(wordsFile, "utf8");
