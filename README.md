@@ -8,6 +8,6 @@ To fix this, I've made a website where I can share my cherished collection taken
 Delight in the wonders of language, explore new vocabulary, and witness the beauty of words brought to life. Join me on this linguistic journey, and together, let's celebrate the splendor of language and build a world of beautiful words.
 
 ## 🖲️ Technologies 
-Next.js 13 + Taiwlind + Vercel Postgres/KV
+Next.js 13 + Tailwind + Vercel Postgres/KV
 
 ### ✦ Made with love by Enzo ✦
