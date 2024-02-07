@@ -1,6 +1,6 @@
 import { kv } from "@vercel/kv";
 import Image from "next/image";
-import { getStoredWord, setStoredWord } from "@/actions/words";
+import { getStoredWord, setStoredWord } from "@/lib/actions/words";
 import ClientSection from "@/components/ClientSection";
 import Footer from "@/components/Footer";
 
@@ -18,12 +18,15 @@ export default async function Home() {
     await getStoredWord().then((currentWord) => {
       if (!currentWord) setStoredWord(words[index][0]).then(() => setWord());
       storedWord = currentWord;
+
       const currentDescription = words
         .find((value) => value[0] === currentWord)
         ?.at(1);
       if (!currentDescription) return;
+
       storedDescription = currentDescription;
     });
+
     return { storedWord, storedDescription };
   };
   const { storedWord, storedDescription } = await setWord();
@@ -107,7 +110,6 @@ export default async function Home() {
             />
             <p className="text-center text-sm leading-normal sm:text-lg sm:leading-7">
               Recherchez dans la liste
-              {/*Au choix : Votre liste ou la nôtre*/}
             </p>
           </div>
         </section>
