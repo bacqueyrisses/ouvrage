@@ -89,7 +89,6 @@ export default async function Home() {
             />
             <p className="text-center text-sm leading-normal sm:text-lg sm:leading-7">
               Un nouveau mot quotidien
-              {/*Créez votre liste de jolis mots*/}
             </p>
           </div>
           <div className={"flex flex-col items-center gap-2"}>
