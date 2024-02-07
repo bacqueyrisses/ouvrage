@@ -1,6 +1,6 @@
 import { kv } from "@vercel/kv";
 import Image from "next/image";
-import { getStoredWord, setStoredWord } from "@/actions/actions";
+import { getStoredWord, setStoredWord } from "@/actions/words";
 import ClientSection from "@/components/ClientSection";
 import Footer from "@/components/Footer";
 
