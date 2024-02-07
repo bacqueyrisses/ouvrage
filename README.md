@@ -6,6 +6,12 @@
   Powered by Vercel.
 </p>
 
+<p align="center" style="margin: 0;>
+  <a href="https://twitter.com/bacqueyrisses"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v5.15.0/icons/twitter.svg" style="width: 19px; height: auto;" alt="Enzo Bacqueyrisses Twitter Account" /></a> ·
+  <a href="https://github.com/bacqueyrisses"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v5.15.0/icons/github.svg"  style="width: 19px; height: auto;" alt="Enzo Bacqueyrisses GitHub Account" /></a> ·
+    <a href="https://www.linkedin.com/in/bacqueyrisses/"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v5.15.0/icons/linkedin.svg"  style="width: 19px; height: auto;" alt="Enzo Bacqueyrisses Linkedin Account" /></a>
+</p>
+
 <p align="center">
   <a href="#tech-stack"><strong>Tech Stack</strong></a> ·
   <a href="#description"><strong>Description</strong></a> ·
@@ -27,10 +33,8 @@
 
 ## Description
 
-- Over the last two years, I've gathered a collection of 450 wonderful words on my iPhone. Each word is unique and beautiful, but I hardly ever look at them in my note app.
-- To fix this, I've made a website where I can share my cherished collection taken from my iCloud note app. Every day, you'll discover a new word showcased, poised to inspire you.
+Over the last two years, I've gathered a collection of 450 wonderful words on my iPhone. Each word is unique and beautiful, but I hardly ever look at them in my note app. To fix this, I've made a website where I can share my cherished collection taken from my iCloud note app. Every day, you'll discover a new word showcased, poised to inspire you.
 
 ## Author
 
-- Enzo Bacqueyrisses&ensp;&ensp;<a href="https://twitter.com/bacqueyrisses"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v5.15.0/icons/twitter.svg" style="width: 15px; height: auto;" alt="Enzo Bacqueyrisses Twitter Account" /></a>&ensp;<a href="https://github.com/bacqueyrisses"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v5.15.0/icons/github.svg"  style="width: 15px; height: auto;" alt="Enzo Bacqueyrisses GitHub Account" /></a>&ensp;<a href="https://www.linkedin.com/in/bacqueyrisses/"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v5.15.0/icons/linkedin.svg"  style="width: 15px; height: auto;" alt="Enzo Bacqueyrisses Linkedin Account" /></a>
-
+- Enzo Bacqueyrisses ([@bacqueyrisses](https://twitter.com/bacqueyrisses))
