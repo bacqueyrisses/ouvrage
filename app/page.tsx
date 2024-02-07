@@ -1,12 +1,12 @@
 import { kv } from "@vercel/kv";
-import appJson from "@/lib/json/words.json"
+import appJson from "@/lib/json/words.json";
 import Image from "next/image";
 import { getStoredWord, setStoredWord } from "@/lib/actions/words";
 import ClientSection from "@/components/ClientSection";
 import Footer from "@/components/Footer";
 
 export default async function Home() {
-  const json: { [key: string]: string } = await kv.get("json") ?? appJson
+  const json: { [key: string]: string } = (await kv.get("json")) ?? appJson;
 
   const words = Object.entries(json) as [string, string][];
   const wordsKeys = Object.keys(json) as string[];
