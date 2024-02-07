@@ -38,5 +38,5 @@
 
 ## Author
 
-- Enzo Bacqueyrisses ([@bacqueyrisses](https://twitter.com/bacqueyrisses))
+- Enzo Bacqueyrisses ([@bacqueyrisses](https://twitter.com/bacqueyrisses)) <a href="#tech-stack"><strong>Tech Stack</strong></a>
 
