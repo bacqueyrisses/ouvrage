@@ -18,8 +18,8 @@
   <a href="#author"><strong>Author</strong></a>
 </p>
 
-<a href="https://www.postai.enzo.codes">
-    <img alt="Design and send AI-crafted, location-based virtual postcards." src="https://github.com/bacqueyrisses/ouvrage/assets/96829831/d8ba6149-c9b7-4c11-98bb-f9e102d03abd">
+<a href="https://www.ouvrage.dev">
+    <img alt="Discover and collect beautiful words, personally chosen." src="https://github.com/bacqueyrisses/ouvrage/assets/96829831/d8ba6149-c9b7-4c11-98bb-f9e102d03abd">
 </a>
 
 <br/>
@@ -37,4 +37,8 @@ Over the last two years, I've gathered a collection of 450 wonderful words on my
 
 ## Author
 
+<<<<<<< HEAD
 - Enzo Bacqueyrisses ([@bacqueyrisses](https://twitter.com/bacqueyrisses))
+=======
+- Enzo Bacqueyrisses &ensp;<a href="https://twitter.com/bacqueyrisses"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v5.15.0/icons/twitter.svg" style="width: 15px; height: auto;" alt="Enzo Bacqueyrisses Twitter Account" /></a>&ensp;<a href="https://github.com/bacqueyrisses"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v5.15.0/icons/github.svg"  style="width: 15px; height: auto;" alt="Enzo Bacqueyrisses GitHub Account" /></a>&ensp;<a href="https://www.linkedin.com/in/bacqueyrisses/"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v5.15.0/icons/linkedin.svg"  style="width: 15px; height: auto;" alt="Enzo Bacqueyrisses Linkedin Account" /></a>
+>>>>>>> da94cd2d6f0ea1e6a6e22f7e56b00c64e5ed103c
