@@ -37,8 +37,4 @@ Over the last two years, I've gathered a collection of 450 wonderful words on my
 
 ## Author
 
-<<<<<<< HEAD
-- Enzo Bacqueyrisses ([@bacqueyrisses](https://twitter.com/bacqueyrisses))
-=======
 - Enzo Bacqueyrisses &ensp;<a href="https://twitter.com/bacqueyrisses"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v5.15.0/icons/twitter.svg" style="width: 15px; height: auto;" alt="Enzo Bacqueyrisses Twitter Account" /></a>&ensp;<a href="https://github.com/bacqueyrisses"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v5.15.0/icons/github.svg"  style="width: 15px; height: auto;" alt="Enzo Bacqueyrisses GitHub Account" /></a>&ensp;<a href="https://www.linkedin.com/in/bacqueyrisses/"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v5.15.0/icons/linkedin.svg"  style="width: 15px; height: auto;" alt="Enzo Bacqueyrisses Linkedin Account" /></a>
->>>>>>> da94cd2d6f0ea1e6a6e22f7e56b00c64e5ed103c
