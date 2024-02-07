@@ -1,5 +1,4 @@
 // @ts-check
-import { kv } from "@vercel/kv";
 import fs from "fs/promises";
 
 const KV_REST_API_URL = "";
