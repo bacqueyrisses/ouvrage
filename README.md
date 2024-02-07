@@ -6,7 +6,7 @@
   Powered by Vercel.
 </p>
 
-<p align="center" style="margin: 0;>
+<p align="center">
   <a href="https://twitter.com/bacqueyrisses"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v5.15.0/icons/twitter.svg" style="width: 18px; height: auto;" alt="Enzo Bacqueyrisses Twitter Account" /></a> 
   <a href="https://github.com/bacqueyrisses"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v5.15.0/icons/github.svg"  style="width: 18px; height: auto;" alt="Enzo Bacqueyrisses GitHub Account" /></a> 
     <a href="https://www.linkedin.com/in/bacqueyrisses/"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v5.15.0/icons/linkedin.svg"  style="width: 18px; height: auto;" alt="Enzo Bacqueyrisses Linkedin Account" /></a>
@@ -38,5 +38,5 @@
 
 ## Author
 
-- Enzo Bacqueyrisses ([@bacqueyrisses](https://twitter.com/bacqueyrisses)) <a href="#tech-stack"><strong>Tech Stack</strong></a>
+- Enzo Bacqueyrisses ([@bacqueyrisses](https://twitter.com/bacqueyrisses)) <a href="https://twitter.com/bacqueyrisses"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v5.15.0/icons/twitter.svg" style="width: 18px; height: auto;" alt="Enzo Bacqueyrisses Twitter Account" /></a>·<a href="https://github.com/bacqueyrisses"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v5.15.0/icons/github.svg"  style="width: 18px; height: auto;" alt="Enzo Bacqueyrisses GitHub Account" /></a>·<a href="https://www.linkedin.com/in/bacqueyrisses/"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v5.15.0/icons/linkedin.svg"  style="width: 18px; height: auto;" alt="Enzo Bacqueyrisses Linkedin Account" /></a>
 
