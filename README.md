@@ -13,7 +13,7 @@
 </p>
 
 <a href="https://www.ouvrage.dev">
-    <img alt="Design and send AI-crafted, location-based virtual postcards." src="https://github.com/bacqueyrisses/ouvrage/assets/96829831/d8ba6149-c9b7-4c11-98bb-f9e102d03abd">
+    <img alt="Discover and collect beautiful words, personally chosen." src="https://github.com/bacqueyrisses/ouvrage/assets/96829831/d8ba6149-c9b7-4c11-98bb-f9e102d03abd">
 </a>
 
 <br/>
