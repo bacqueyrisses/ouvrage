@@ -45,7 +45,7 @@ str.writeToFileAtomicallyEncodingError(
   filename,
   true,
   $.NSUTF8StringEncoding,
-  null
+  null,
 );
 
 // write the JSON to a file
